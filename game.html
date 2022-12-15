@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game doan so</title>
+     <button type="button" id="b">play</button>  
+</head>
+<body>
+ <script>
+    var t = document.getElementById("b");
+     t.onclick = function abc(){
+                var r= prompt ("nhap mot so lon nhat");
+                var f = Math.floor(Math.random()*r);
+                var y = 0;                             
+             do {
+              var g = prompt("nhap so chon");  
+               if (g == f) {
+                alert("you winner");
+               }else  {
+                alert("nhap lai");
+               }       
+          y++ ;
+          }while (y<5);
+      } 
+  </script>
+</body>
+</html>

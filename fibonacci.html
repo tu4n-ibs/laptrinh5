@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fibonacci</title>
+    </head>
+    <body>
+     <script>
+        var a = Number(prompt('nhap mot so bat ki '));
+        var  b = 1 , c = 1, d;
+        document.write('day so fibonacci'+":  ");
+            d = b + c; 
+        document.write(b); 
+        document.write(c); 
+        while (d <= a) {
+            document.write(d);
+            b = c;
+            c = d;
+            d = b + c;
+         }      
+     </script>
+    </body>
+</html>
